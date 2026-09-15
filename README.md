@@ -43,8 +43,6 @@ import {
   MovieTitleSequence,
   type MovieTitleScene,
 } from "@bravotango/react-movie-titles";
-
-import "@bravotango/react-movie-titles/index.css";
 ```
 
 ---
@@ -79,9 +77,9 @@ Set `perChar` to animate each character independently.
 ```tsx
 <MovieTitle
   animationName="glitch"
-  perChar
+  perChar={true}
   duration={6}
-  stagger={0.05}
+  stagger={0.12}
   intensity="drastic"
 >
   Signal Lost

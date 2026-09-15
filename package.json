@@ -1,6 +1,6 @@
 {
   "name": "@bravotango/react-movie-titles",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Animated React movie titles and title sequences.",
   "type": "module",
   "main": "./dist/index.js",

@@ -1,0 +1,42 @@
+{
+  "name": "@bravotango/react-movie-titles",
+  "version": "1.0.0",
+  "description": "Animated React movie titles and title sequences.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite demo",
+    "build": "rm -rf dist && vite build && tsc --emitDeclarationOnly",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "animation",
+    "title",
+    "text-animation",
+    "movie-title"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.2.2",
+    "vite-plugin-lib-inject-css": "^2.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

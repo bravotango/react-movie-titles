@@ -27,8 +27,6 @@ Cinematic title animations for React.
 npm install @bravotango/react-movie-titles
 ```
 
-````
-
 Or with pnpm:
 
 ```bash
@@ -395,5 +393,9 @@ https://www.npmjs.com/package/@bravotango/react-image-cycle
 
 ## License
 
-MIT
-````
+[![License: MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Author
+
+Brian Tracy  
+https://github.com/bravotango

@@ -12,7 +12,7 @@
   margin: 0;
   font-size: 2em;
   text-align: center;
-  overflow: visible;
+  overflow: hidden;
   overflow-wrap: break-word;
   font-family: inherit;
 }

@@ -1,25 +1,26 @@
 import { jsx as e } from "react/jsx-runtime";
 import { useEffect as t, useState as n } from "react";
 import './index.css';var r = {
-	"movie-title": "_movie-title_gb9b0_1",
-	"movie-title__character": "_movie-title__character_gb9b0_25",
-	"movie-title__word": "_movie-title__word_gb9b0_33",
-	blow: "_blow_gb9b0_40",
-	"drop-in": "_drop-in_gb9b0_43",
-	elastic: "_elastic_gb9b0_46",
-	glitch: "_glitch_gb9b0_49",
-	projector: "_projector_gb9b0_52",
-	bread: "_bread_gb9b0_55",
-	poof: "_poof_gb9b0_58",
-	washer: "_washer_gb9b0_61",
-	flicker: "_flicker_gb9b0_64",
-	gravity: "_gravity_gb9b0_67",
-	"spin-in": "_spin-in_gb9b0_70",
-	"rubber-band": "_rubber-band_gb9b0_73",
-	pogo: "_pogo_gb9b0_76",
-	pulse: "_pulse_gb9b0_79",
-	takeoff: "_takeoff_gb9b0_82",
-	wave: "_wave_gb9b0_1"
+	"movie-title-container": "_movie-title-container_kh7al_1",
+	"movie-title": "_movie-title_kh7al_1",
+	"movie-title__character": "_movie-title__character_kh7al_36",
+	"movie-title__word": "_movie-title__word_kh7al_44",
+	blow: "_blow_kh7al_51",
+	"drop-in": "_drop-in_kh7al_54",
+	elastic: "_elastic_kh7al_57",
+	glitch: "_glitch_kh7al_60",
+	projector: "_projector_kh7al_63",
+	bread: "_bread_kh7al_66",
+	poof: "_poof_kh7al_69",
+	washer: "_washer_kh7al_72",
+	flicker: "_flicker_kh7al_75",
+	gravity: "_gravity_kh7al_78",
+	"spin-in": "_spin-in_kh7al_81",
+	"rubber-band": "_rubber-band_kh7al_84",
+	pogo: "_pogo_kh7al_87",
+	pulse: "_pulse_kh7al_90",
+	takeoff: "_takeoff_kh7al_93",
+	wave: "_wave_kh7al_1"
 }, i = {
 	subtle: .5,
 	normal: 1,
@@ -30,25 +31,29 @@ import './index.css';var r = {
 		"--movie-title-intensity": i[f],
 		zIndex: p
 	};
-	return /* @__PURE__ */ e(m, {
-		className: h,
-		style: g,
-		children: n ? [...a].map((n, i) => /* @__PURE__ */ e("span", {
-			className: `${r["movie-title__character"]} ${r[t]}`,
-			style: {
-				animationDelay: `${o + i * c}s`,
-				animationDuration: `${s}s`,
-				animationIterationCount: l
-			},
-			children: n === " " ? "\xA0" : n
-		}, `${n}-${i}`)) : /* @__PURE__ */ e("span", {
-			className: `${r["movie-title__word"]} ${r[t]}`,
-			style: {
-				animationDelay: `${o}s`,
-				animationDuration: `${s}s`,
-				animationIterationCount: l
-			},
-			children: a
+	return /* @__PURE__ */ e("div", {
+		className: r["movie-title-container"],
+		style: { zIndex: p },
+		children: /* @__PURE__ */ e(m, {
+			className: h,
+			style: g,
+			children: n ? [...a].map((n, i) => /* @__PURE__ */ e("span", {
+				className: `${r["movie-title__character"]} ${r[t]}`,
+				style: {
+					animationDelay: `${o + i * c}s`,
+					animationDuration: `${s}s`,
+					animationIterationCount: l
+				},
+				children: n === " " ? "\xA0" : n
+			}, `${n}-${i}`)) : /* @__PURE__ */ e("span", {
+				className: `${r["movie-title__word"]} ${r[t]}`,
+				style: {
+					animationDelay: `${o}s`,
+					animationDuration: `${s}s`,
+					animationIterationCount: l
+				},
+				children: a
+			})
 		})
 	});
 }, o = { "movie-title-sequence": "_movie-title-sequence_1dols_1" }, s = ({ titles: r, loop: i = !1, className: s = "", zIndex: c = 1 }) => {

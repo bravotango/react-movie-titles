@@ -34,34 +34,36 @@ const MovieTitle = ({
   } as CSSProperties;
 
   return (
-    <HtmlTag className={movieTitleClassName} style={movieTitleStyle}>
-      {perChar ? (
-        [...children].map((character, index) => (
+    <div className={styles["movie-title-container"]} style={{ zIndex }}>
+      <HtmlTag className={movieTitleClassName} style={movieTitleStyle}>
+        {perChar ? (
+          [...children].map((character, index) => (
+            <span
+              key={`${character}-${index}`}
+              className={`${styles["movie-title__character"]} ${styles[animationName]}`}
+              style={{
+                animationDelay: `${delay + index * stagger}s`,
+                animationDuration: `${duration}s`,
+                animationIterationCount,
+              }}
+            >
+              {character === " " ? "\u00A0" : character}
+            </span>
+          ))
+        ) : (
           <span
-            key={`${character}-${index}`}
-            className={`${styles["movie-title__character"]} ${styles[animationName]}`}
+            className={`${styles["movie-title__word"]} ${styles[animationName]}`}
             style={{
-              animationDelay: `${delay + index * stagger}s`,
+              animationDelay: `${delay}s`,
               animationDuration: `${duration}s`,
               animationIterationCount,
             }}
           >
-            {character === " " ? "\u00A0" : character}
+            {children}
           </span>
-        ))
-      ) : (
-        <span
-          className={`${styles["movie-title__word"]} ${styles[animationName]}`}
-          style={{
-            animationDelay: `${delay}s`,
-            animationDuration: `${duration}s`,
-            animationIterationCount,
-          }}
-        >
-          {children}
-        </span>
-      )}
-    </HtmlTag>
+        )}
+      </HtmlTag>
+    </div>
   );
 };
 

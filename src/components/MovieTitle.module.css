@@ -360,11 +360,13 @@
   0%,
   100% {
     transform: translateY(calc(-500px * var(--movie-title-intensity)));
+    opacity: 0;
   }
 
   5%,
   95% {
     transform: translateY(calc(-500px * var(--movie-title-intensity)));
+    opacity: 1;
   }
 
   15% {

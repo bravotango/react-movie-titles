@@ -240,13 +240,13 @@ Set `loop` to continuously restart the sequence.
 "flicker";
 "glitch";
 "gravity";
-"incoming";
 "pogo";
 "poof";
 "projector";
 "pulse";
 "rubber-band";
 "spin-in";
+"takeoff";
 "washer";
 ```
 
